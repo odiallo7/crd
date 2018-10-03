@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Authentification</title>
+		<!-- l'appel de {$url_base} vous permet de recupérer le chemin de votre site web  -->
+		<link type="text/css" rel="stylesheet" href="{$url_base}public/css/bootstrap.css"/>
+		<link type="text/css" rel="stylesheet" href="{$url_base}public/css/bootstrap.min.css"/>
+		<link type="text/css" rel="stylesheet" href="{$url_base}public/css/samane.css"/>
+	</head>
+	<body>
+
+	<!--        ESpace              -->		
+		<div class="col-md-4 col-sm-12 col-xs-12 col-lg-4 col-md-offset-4" style="margin-top:150px;">
+			<div class="panel panel-primary">
+				<div class="panel-heading" style="font-weight: bold;text-align: center;">Authentification Service Technique</div>
+				<div class="panel-body">										
+					<form method="post" action="{$url_base}Service/connexion">
+						<div class="form-group">
+							<label class="control-label" style="color: blue;">Nom d'utilisateur</label>
+							<input class="form-control" type="text" name="s_login" id="s_login" autofocus="autofocus" required />
+						</div>
+						<div class="form-group">
+							<label class="control-label" style="color: blue;">Mot de Passe</label>
+							<input class="form-control" type="password" name="s_password" id="s_password" required />
+						</div>
+						<div class="form-group">
+							<input class="btn btn-success" type="submit" name="connecter" value="Se connecter"/>
+							<input class="btn btn-danger" type="reset" name="annuler" value="Annuler"/>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
