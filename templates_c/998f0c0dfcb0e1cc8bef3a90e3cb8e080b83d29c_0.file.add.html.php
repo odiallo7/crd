@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-10-02 17:27:22
+/* Smarty version 3.1.30, created on 2018-10-03 15:30:34
   from "C:\xampp\htdocs\crd\view\rapport\add.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5bb38e5aa10a03_41496370',
+  'unifunc' => 'content_5bb4c47a6b3328_68518464',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '998f0c0dfcb0e1cc8bef3a90e3cb8e080b83d29c' => 
     array (
       0 => 'C:\\xampp\\htdocs\\crd\\view\\rapport\\add.html',
-      1 => 1538494038,
+      1 => 1538573418,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bb38e5aa10a03_41496370 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bb4c47a6b3328_68518464 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <html>
 	<head>
@@ -76,16 +76,9 @@ Rapport/liste">Consultation Rapports</a></li>
 						    </select>
 						  </div>
 						  <div class="form-group">
-						      <label for="control-label"> Sélectionnez l'année en cours </label>
-						      <select id="r_annee" name="r_annee" class="form-control">
-						          <option value="">-------------</option>
-						          <option value="2018">2018</option>
-						          <option value="2019">2019</option>
-						          <option value="2020">2020</option>
-						          <option value="2021">2021</option>
-						          <option value="2022">2022</option>						         
-						      </select>
-						    </div>
+						  	<label class="control-label">Année du Rapport</label>
+						  	<input class="form-control" type="text" name="r_annee" id="r_annee" value="2018" readonly />
+						  </div>
 						<div class="form-group">
 							<input class="btn btn-success" type="submit" name="creer" value="Créer Un Rapport"/>
 							<input class="btn btn-danger" type="reset" name="annuler" value="Annuler"/>

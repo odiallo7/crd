@@ -28,7 +28,8 @@ class Rapport extends Controller
 			if(!empty($_SESSION['id']) && !empty($_POST['r_mois']) && !empty($_POST['r_annee'])){
 				$ok = $tdb->addRapport($_SESSION['id'], $_POST['r_mois'], $_POST['r_annee']);
 				echo $ok;
-				//return $this->view->load("rapport/index");
+				$_SESSION['id_r'] = $ok;
+				return $this->view->load("activite/add");
 			}
 		} else {
 			return $this->view->load("rapport/add");
