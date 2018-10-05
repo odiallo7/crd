@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-10-03 15:30:34
+/* Smarty version 3.1.30, created on 2018-10-04 12:27:09
   from "C:\xampp\htdocs\crd\view\rapport\add.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5bb4c47a6b3328_68518464',
+  'unifunc' => 'content_5bb5eafde17f11_81472447',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '998f0c0dfcb0e1cc8bef3a90e3cb8e080b83d29c' => 
     array (
       0 => 'C:\\xampp\\htdocs\\crd\\view\\rapport\\add.html',
-      1 => 1538573418,
+      1 => 1538648801,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bb4c47a6b3328_68518464 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bb5eafde17f11_81472447 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <html>
 	<head>
@@ -48,7 +48,7 @@ Rapport/index">Accueil</a></li>
 				<li><a href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
 Rapport/add">Soumettre Un Rapport</a></li>
 				<li><a href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
-Rapport/liste">Consultation Rapports</a></li>
+Rapport/check">Consultation Rapports</a></li>
 			</ul>
 		</div>
 

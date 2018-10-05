@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-10-02 13:06:58
+/* Smarty version 3.1.30, created on 2018-10-04 12:13:49
   from "C:\xampp\htdocs\crd\view\service\connexion.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5bb35152badf87_54056202',
+  'unifunc' => 'content_5bb5e7dda18395_52466676',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd4d58b06ce25a5b174048b4ae9dc87f11de82bac' => 
     array (
       0 => 'C:\\xampp\\htdocs\\crd\\view\\service\\connexion.html',
-      1 => 1538478384,
+      1 => 1538648022,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bb35152badf87_54056202 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bb5e7dda18395_52466676 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <html>
 	<head>
@@ -53,8 +53,9 @@ Service/connexion">
 							<input class="form-control" type="password" name="s_password" id="s_password" required />
 						</div>
 						<div class="form-group">
-							<input class="btn btn-success" type="submit" name="connecter" value="Se connecter"/>
-							<input class="btn btn-danger" type="reset" name="annuler" value="Annuler"/>
+							<input class="btn btn-success" type="submit" name="connecter" value="Se connecter"/>						
+							<a class="btn btn-danger" href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
+Service/index"> Annuler </a>
 						</div>
 					</form>
 				</div>

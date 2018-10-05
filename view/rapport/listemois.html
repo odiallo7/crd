@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Rapport du mois </title>
+
+    <link rel="stylesheet" type="text/css" href="{$url_base}public/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{$url_base}public/css/">
+
+    <script type="text/javascript" src="{$url_base}public/js/jquery.js"></script>
+    <script type="text/javascript" src="{$url_base}public/js/jquery-ui.js"></script>
+   
+
+
+</head>
+<body>
+    
+    <div class="navbar navbar-default navbar-fixed-top">
+      <ul class="nav navbar-nav">
+        <!-- l'appel de {$url_base} vous permet de recupérer le chemin de votre site web  -->
+        <li><a href="{$url_base}Rapport/index">Accueil</a></li>
+        <li><a href="{$url_base}Rapport/add">Soumettre Un Rapport</a></li>
+        <li><a href="{$url_base}Rapport/liste">Consultation des CRD</a></li>
+        <li><a href="{$url_base}Rapport/check">Consultation Rapports Mensuels</a></li>
+      </ul>
+    </div>
+
+     
+
+    <div class="container-fluid" style="margin-top: 60px;">
+    
+     <div class=" alert alert-warning">
+       <h3 style="text-align: center;"> Liste Rapport Mensuel !</h3>
+     </div>
+    {if isset($rapports)}
+       {if $rapports != null}
+    <table width="100%" id="table" class="table table-striped table-bordered" cellspacing="0">
+      <thead>
+        <tr>
+            <th>Service</th>
+            <th>Mois</th>
+            <th>Année</th>
+            <th>Activités</th>   
+            <th>Résultats</th>
+            <th>Contraintes</th>
+            <th>Observations</th>
+        </tr>
+      </thead>
+    <tbody>
+        {foreach from=$rapports item=rapport}
+          <tr>
+            <td>{$rapport['s_sigle']}</td>
+            <td>{$rapport['r_mois']}</td>
+            <td>{$rapport['r_annee']}</td>
+            <td>{$rapport['a_titre']}</td>
+            <td>{$rapport['a_resultat']}</td>
+            <td>{$rapport['a_contrainte']}</td>
+            <td>{$rapport['a_observation']}</td>
+           <!--  <td><a href="{$url_base}Village/delete/{$village['idVillage']}"> <img src="{$url_base}public/image/delete16.png" class="resize"/>Supprimer</a></td>
+            <td><a href="{$url_base}Village/edit/{$village['idVillage']}"> <img src="{$url_base}public/image/edit16.png" class="resize" />Editer</a></td>-->
+          </tr> 
+        {/foreach}
+    </tbody>
+    </table>
+       {else}
+         Liste vide
+       {/if}
+   {/if}
+    </div>
+</body>
+</html>

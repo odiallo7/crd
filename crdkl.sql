@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  jeu. 04 oct. 2018 à 11:24
+-- Généré le :  ven. 05 oct. 2018 à 11:15
 -- Version du serveur :  10.1.35-MariaDB
 -- Version de PHP :  7.2.9
 
@@ -42,16 +42,13 @@ CREATE TABLE `activite` (
 --
 
 INSERT INTO `activite` (`a_id`, `r_id`, `a_titre`, `a_resultat`, `a_contrainte`, `a_observation`) VALUES
-(1, 5, 'mon activitÃ©', 'mes rÃ©sultats', 'mes contraintres', 'mes observation'),
-(2, 6, 'mon activitÃ©', 'mes rÃ©sultats', 'mes contraintres', 'mes observation'),
-(3, 10, 'a', 'a', 'a', 'a'),
-(4, 11, 'ab', 'abc', 'abcd', 'abcde'),
-(5, 11, 'az', 'az', 'az', 'az'),
-(6, 11, 'aed', 'ffg', 'fgg', 'fggg'),
-(7, 11, 'ddddd', 'dddd', 'ddddd', 'dddd'),
-(8, 11, 'apre', 'apres', 'apres', 'apres'),
-(9, 12, 'fsdÃ¹lm', 'zlmd;', 'sfmm', 'mmm'),
-(10, 13, 'aaz', 'zee', 'ee', 'zee');
+(1, 5, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae mi semper, fermentum ante vel, iaculis velit. Pellentesque in lobortis mi. Duis semper lacus justo, vitae sodales erat porta sit amet. Sed suscipit feugiat libero eu sagittis. Pellentesque in lobortis ex, vel feugiat felis. Pellentesque gravida risus ut neque faucibus, a feugiat tortor rutrum. ', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae mi semper, fermentum ante vel, iaculis velit. Pellentesque in lobortis mi. Duis semper lacus justo, vitae sodales erat porta sit amet. Sed suscipit feugiat libero eu sagittis. Pellentesque in lobortis ex, vel feugiat felis. Pellentesque gravida risus ut neque faucibus, a feugiat tortor rutrum. N', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae mi semper, fermentum ante vel, iaculis velit. Pellentesque in lobortis mi. Duis semper lacus justo, vitae sodales erat porta sit amet. Sed suscipit feugiat libero eu sagittis. Pellentesque in lobortis ex, vel feugiat felis. Pellentesque gravida risus ut neque faucibus, a feugiat tortor rutrum. ', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae mi semper, fermentum ante vel, iaculis velit. Pellentesque in lobortis mi. Duis semper lacus justo, vitae sodales erat porta sit amet. Sed suscipit feugiat libero eu sagittis. Pellentesque in lobortis ex, vel feugiat felis. Pellentesque gravida risus ut neque faucibus, a feugiat tortor rutrum. '),
+(2, 6, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae mi semper, fermentum ante vel, iaculis velit. Pellentesque in lobortis mi. ', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae mi semper, fermentum ante vel, iaculis velit. Pellentesque in lobortis mi. ', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae mi semper, fermentum ante vel, iaculis velit. Pellentesque in lobortis mi. ', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae mi semper, fermentum ante vel, iaculis velit. Pellentesque in lobortis mi. '),
+(3, 10, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae mi semper, fermentum ante vel, iaculis velit. Pellentesque in lobortis mi. ', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae mi semper, fermentum ante vel, iaculis velit. Pellentesque in lobortis mi. ', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae mi semper, fermentum ante vel, iaculis velit. Pellentesque in lobortis mi. ', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae mi semper, fermentum ante vel, iaculis velit. Pellentesque in lobortis mi. '),
+(4, 11, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae mi semper, fermentum ante vel, iaculis velit. Pellentesque in lobortis mi. ', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae mi semper, fermentum ante vel, iaculis velit. Pellentesque in lobortis mi. ', 'RAS', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae mi semper, fermentum ante vel, iaculis velit. Pellentesque in lobortis mi. '),
+(5, 11, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae mi semper, fermentum ante vel, iaculis velit. Pellentesque in lobortis mi. ', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae mi semper, fermentum ante vel, iaculis velit. Pellentesque in lobortis mi. ', 'RAS', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae mi semper, fermentum ante vel, iaculis velit. Pellentesque in lobortis mi. '),
+(8, 11, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae mi semper, fermentum ante vel, iaculis velit. Pellentesque in lobortis mi. ', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '),
+(9, 12, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae mi semper, fermentum ante vel, iaculis velit. Pellentesque in lobortis mi. ', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae mi semper, fermentum ante vel, iaculis velit.');
 
 -- --------------------------------------------------------
 
@@ -111,8 +108,9 @@ CREATE TABLE `service` (
 INSERT INTO `service` (`s_id`, `s_nom`, `s_sigle`, `s_telephone`, `s_email`, `s_adresse`, `s_responsable`, `s_responsabletel`, `s_login`, `s_password`) VALUES
 (9, 'Chambre de Commmerce', 'cciak', 701020202, 'cciak@cciak.sn', 'Leona', 'Mr Thiam', 783223434, 'cciak', 'passer'),
 (10, 'Police', 'cckl', 77332211, 'cckl@cckl.kl', 'centre ville', 'commisaire', 77825462, 'cckl', 'passer'),
-(12, 'ASC Damels', 'damels', 7845, 'damel@info.com', 'medina', 'ch km', 85201479, 'damels', 'passer'),
-(14, 'ASc Niarry Tally', 'niimgui', 788, 'po', 'po', 'po', 78, 'niimgui', 'passer');
+(12, 'Gouvernance de Kaolack', 'gouv', 78455522, 'gouv@info.com', 'Ville', 'Gouverneur', 85201479, 'gouv', 'passer'),
+(14, 'Mairie de Kaolack', 'mairie', 778885566, 'mairie@kaolack.kl', 'Route de Dakar', 'Yama Sarr', 785556633, 'mairie', 'passer'),
+(15, 'Gouvernance de Kaolack', 'gouv', 784552233, 'gouv@info.com', 'Ville', 'Gouverneur', 785201479, 'gouv', 'passer');
 
 --
 -- Index pour les tables déchargées
@@ -146,7 +144,7 @@ ALTER TABLE `service`
 -- AUTO_INCREMENT pour la table `activite`
 --
 ALTER TABLE `activite`
-  MODIFY `a_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `a_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT pour la table `rapport`
@@ -158,7 +156,7 @@ ALTER TABLE `rapport`
 -- AUTO_INCREMENT pour la table `service`
 --
 ALTER TABLE `service`
-  MODIFY `s_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `s_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- Contraintes pour les tables déchargées

@@ -36,7 +36,30 @@ class Rapport extends Controller
 		}
 		
 		return $this->view->load("rapport/add");
-	}	
+	}
+
+	public function check()
+		{
+			$tdb = new RapportDB();
+			if (isset($_POST['chercher'])) {
+				extract($_POST);
+				$data['rapports'] = 0;
+				if (!empty($_POST['r_mois']) && !empty($_POST['r_annee'])) {
+					$data['rapports'] = $tdb->getRapport($_POST['r_mois'], $_POST['r_annee']);
+					return $this->view->load("rapport/listemois", $data);
+				} 
+			} else {
+				return $this->view->load("rapport/check");
+			}			
+		}
+
+
+	public function liste()
+		{
+			$tdb = new RapportDB();
+			$data['rapports'] = $tdb->getAllRapport();
+			return $this->view->load("rapport/liste", $data);
+		}	
 }
 
  ?>
