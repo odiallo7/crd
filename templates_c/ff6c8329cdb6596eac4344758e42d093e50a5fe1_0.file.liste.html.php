@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-10-04 19:24:02
+/* Smarty version 3.1.30, created on 2018-10-05 15:39:17
   from "C:\xampp\htdocs\crd\view\rapport\liste.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5bb64cb2efa374_01722285',
+  'unifunc' => 'content_5bb76985a1b3c8_93472724',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ff6c8329cdb6596eac4344758e42d093e50a5fe1' => 
     array (
       0 => 'C:\\xampp\\htdocs\\crd\\view\\rapport\\liste.html',
-      1 => 1538670568,
+      1 => 1538746751,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bb64cb2efa374_01722285 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bb76985a1b3c8_93472724 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -30,7 +30,7 @@ function content_5bb64cb2efa374_01722285 (Smarty_Internal_Template $_smarty_tpl)
     <link rel="stylesheet" type="text/css" href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
 public/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
-public/css/">
+public/css/dataTables.bootstrap.min.css">
 
     <?php echo '<script'; ?>
  type="text/javascript" src="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
@@ -39,6 +39,24 @@ public/js/jquery.js"><?php echo '</script'; ?>
     <?php echo '<script'; ?>
  type="text/javascript" src="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
 public/js/jquery-ui.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ type="text/javascript" src="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
+public/js/dataTables.bootstrap.min.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ type="text/javascript" src="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
+public/js/jquery.dataTables.min.js"><?php echo '</script'; ?>
+>
+
+
+     <?php echo '<script'; ?>
+ type="text/javascript">
+        $(document).ready(function() {
+            $(".table").DataTable({
+        });
+      });
+    <?php echo '</script'; ?>
 >
    
 
@@ -63,14 +81,16 @@ Rapport/check">Consultation Rapports Mensuels</a></li>
 
      
 
-    <div class="container-fluid" style="margin-top: 60px;">
-    
-     <div class=" alert alert-warning">
-       <h3 style="text-align: center;"> La liste des Rapports des CRD !</h3>
-     </div>
+    <div class="container" style="margin-top: 60px; width: 100%;">
+
+      <div class=" alert alert-warning">
+        <h3 style="text-align: center;"> La liste des Rapports des CRD !</h3>
+      </div>
+
     <?php if (isset($_smarty_tpl->tpl_vars['rapports']->value)) {?>
        <?php if ($_smarty_tpl->tpl_vars['rapports']->value != null) {?>
-    <table width="100%" id="table" class="table table-striped table-bordered" cellspacing="0">
+    
+    <table width="100%" id="table" class="table table-striped table-bordered" cellspacing="0" style="width: 100%; text-align: center;">
       <thead>
         <tr>
             <th>Service</th>
@@ -120,11 +140,12 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 
     </tbody>
     </table>
+  
        <?php } else { ?>
          Liste vide
        <?php }?>
    <?php }?>
-    </div>
+  </div>
 </body>
 </html><?php }
 }

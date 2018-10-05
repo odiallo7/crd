@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-10-04 19:44:51
+/* Smarty version 3.1.30, created on 2018-10-05 15:24:59
   from "C:\xampp\htdocs\crd\view\rapport\listemois.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5bb65193ae2094_11178797',
+  'unifunc' => 'content_5bb7662b14a161_84681300',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6905750abb0f827b77839f68c223c525bc1097e0' => 
     array (
       0 => 'C:\\xampp\\htdocs\\crd\\view\\rapport\\listemois.html',
-      1 => 1538671626,
+      1 => 1538745884,
       2 => 'file',
     ),
   ),
@@ -20,25 +20,43 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bb65193ae2094_11178797 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bb7662b14a161_84681300 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
 <head>
     <title> Rapport du mois </title>
 
-    <link rel="stylesheet" type="text/css" href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
+   <link rel="stylesheet" type="text/css" href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
 public/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
-public/css/">
+   <link rel="stylesheet" type="text/css" href="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
+public/css/dataTables.bootstrap.min.css">
 
-    <?php echo '<script'; ?>
+   <?php echo '<script'; ?>
  type="text/javascript" src="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
 public/js/jquery.js"><?php echo '</script'; ?>
 >
-    <?php echo '<script'; ?>
+   <?php echo '<script'; ?>
  type="text/javascript" src="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
 public/js/jquery-ui.js"><?php echo '</script'; ?>
+>
+   <?php echo '<script'; ?>
+ type="text/javascript" src="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
+public/js/dataTables.bootstrap.min.js"><?php echo '</script'; ?>
+>
+   <?php echo '<script'; ?>
+ type="text/javascript" src="<?php echo $_smarty_tpl->tpl_vars['url_base']->value;?>
+public/js/jquery.dataTables.min.js"><?php echo '</script'; ?>
+>
+
+
+    <?php echo '<script'; ?>
+ type="text/javascript">
+       $(document).ready(function() {
+           $(".table").DataTable({
+       });
+     });
+   <?php echo '</script'; ?>
 >
    
 
@@ -63,14 +81,14 @@ Rapport/check">Consultation Rapports Mensuels</a></li>
 
      
 
-    <div class="container-fluid" style="margin-top: 60px;">
+    <div class="container-fluid" style="margin-top: 60px; width: 100%;">
     
      <div class=" alert alert-warning">
        <h3 style="text-align: center;"> Liste Rapport Mensuel !</h3>
      </div>
     <?php if (isset($_smarty_tpl->tpl_vars['rapports']->value)) {?>
        <?php if ($_smarty_tpl->tpl_vars['rapports']->value != null) {?>
-    <table width="100%" id="table" class="table table-striped table-bordered" cellspacing="0">
+    <table width="100%" id="table" class="table table-striped table-bordered" cellspacing="0" style="width: 100%; text-align: center;">
       <thead>
         <tr>
             <th>Service</th>
